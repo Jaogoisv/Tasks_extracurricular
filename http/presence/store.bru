@@ -1,0 +1,19 @@
+meta {
+  name: store
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3333/Presence
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "enrollements_id": 1, 
+    "date": "08/10/2024", 
+    "present": true
+  }
+}

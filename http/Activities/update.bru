@@ -1,0 +1,18 @@
+meta {
+  name: update
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/Activity/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Aula de Esgrima",
+    "description": "Aula geral sobre as praticas de esgrima e seus ganhos."
+  }
+}

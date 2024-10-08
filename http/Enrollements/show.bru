@@ -1,0 +1,25 @@
+meta {
+  name: show
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3333/Enrollements/1
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: MQ.pyiJLo71X9UcteDmx6s6gdQ9IoGswOX6e6Rf-JC5JJdoc3mdVQ-w_YBcXCGM
+}
+
+body:json {
+  {
+    "name": "joao",
+    "cpf": "000.000.000-00",
+    "email": "joaovictorgoisv@gmail.com",
+    "password": "secret",
+    "date": "08/07/2024"
+  }
+}

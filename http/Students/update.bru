@@ -1,0 +1,17 @@
+meta {
+  name: update
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/Students/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "joaogoisv"
+  }
+}

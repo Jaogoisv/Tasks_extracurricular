@@ -1,0 +1,21 @@
+meta {
+  name: delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:3333/Enrollements/1
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: MQ.1ApphTTdipjxJblEmX0v-CZ-1b0_At-8xYH4rVc71BCAbxc_wrMB3VoG9nhK
+}
+
+body:json {
+  {
+    "name": "joaogoisv"
+  }
+}

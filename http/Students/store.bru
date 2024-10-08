@@ -1,0 +1,21 @@
+meta {
+  name: store
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3333/Students
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "joao",
+    "cpf": "000.000.000-00",
+    "email": "joaovictorgoisv@gmail.com",
+    "password": "secret",
+    "date": "08/07/2024"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: store
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3333/Activity
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Aula de esgrima",
+    "description": "Aula geral sobre as praticas de esgrima e seus ganhos.",
+    "email": "joaovictorgoisv@gmail.com",
+    "date_start": "02/03/2023",
+    "date_end": "08/05/2024"
+  }
+}

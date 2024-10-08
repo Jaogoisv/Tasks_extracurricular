@@ -1,0 +1,23 @@
+meta {
+  name: store
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3333/Enrollements
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: MQ.pyiJLo71X9UcteDmx6s6gdQ9IoGswOX6e6Rf-JC5JJdoc3mdVQ-w_YBcXCGM
+}
+
+body:json {
+  {
+    "studentId": 1,
+    "activityId": 1,
+    "date_enrollement":"06/07/2024"
+  }
+}
